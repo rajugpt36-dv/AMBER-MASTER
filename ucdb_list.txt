@@ -1,0 +1,15 @@
+C:\Users\Windows 10\Downloads\axi4lite_uvm_tb\axi4lite_uvm_tb\sim\coverage_db\tc001_single_write_test.ucdb
+C:\Users\Windows 10\Downloads\axi4lite_uvm_tb\axi4lite_uvm_tb\sim\coverage_db\tc002_single_read_test.ucdb
+C:\Users\Windows 10\Downloads\axi4lite_uvm_tb\axi4lite_uvm_tb\sim\coverage_db\tc003_write_read_test.ucdb
+C:\Users\Windows 10\Downloads\axi4lite_uvm_tb\axi4lite_uvm_tb\sim\coverage_db\tc004_seq_writes_test.ucdb
+C:\Users\Windows 10\Downloads\axi4lite_uvm_tb\axi4lite_uvm_tb\sim\coverage_db\tc005_seq_reads_test.ucdb
+C:\Users\Windows 10\Downloads\axi4lite_uvm_tb\axi4lite_uvm_tb\sim\coverage_db\tc006_rand_writes_test.ucdb
+C:\Users\Windows 10\Downloads\axi4lite_uvm_tb\axi4lite_uvm_tb\sim\coverage_db\tc007_rand_reads_test.ucdb
+C:\Users\Windows 10\Downloads\axi4lite_uvm_tb\axi4lite_uvm_tb\sim\coverage_db\tc008_rand_mix_test.ucdb
+C:\Users\Windows 10\Downloads\axi4lite_uvm_tb\axi4lite_uvm_tb\sim\coverage_db\tc009_reset_idle_test.ucdb
+C:\Users\Windows 10\Downloads\axi4lite_uvm_tb\axi4lite_uvm_tb\sim\coverage_db\tc010_reset_txn_test.ucdb
+C:\Users\Windows 10\Downloads\axi4lite_uvm_tb\axi4lite_uvm_tb\sim\coverage_db\tc011_b2b_writes_test.ucdb
+C:\Users\Windows 10\Downloads\axi4lite_uvm_tb\axi4lite_uvm_tb\sim\coverage_db\tc012_b2b_reads_test.ucdb
+C:\Users\Windows 10\Downloads\axi4lite_uvm_tb\axi4lite_uvm_tb\sim\coverage_db\tc013_wstrb_all_test.ucdb
+C:\Users\Windows 10\Downloads\axi4lite_uvm_tb\axi4lite_uvm_tb\sim\coverage_db\tc014_invalid_addr_test.ucdb
+C:\Users\Windows 10\Downloads\axi4lite_uvm_tb\axi4lite_uvm_tb\sim\coverage_db\tc015_stress_test.ucdb

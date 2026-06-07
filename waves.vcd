@@ -1,0 +1,148 @@
+$date
+	Sun Jun 07 09:31:11 2026
+$end
+$version
+	QuestaSim Version 10.7c
+$end
+$timescale
+	1ps
+$end
+
+$scope module tb_top $end
+
+$scope module u_slave_bfm $end
+
+$scope task reset_outputs $end
+$upscope $end
+
+$scope task run_write $end
+$upscope $end
+
+$scope task run_read $end
+$upscope $end
+$upscope $end
+
+$scope module u_assertions $end
+
+$scope begin AST_AW01_AWVALID_STABLE $end
+$upscope $end
+
+$scope begin AST_AW02_AWADDR_STABLE $end
+$upscope $end
+
+$scope begin AST_AW03_AWREADY_TIMEOUT $end
+$upscope $end
+
+$scope begin AST_AW04_AWADDR_ALIGNED $end
+$upscope $end
+
+$scope begin AST_AW05_AWADDR_NO_X $end
+$upscope $end
+
+$scope begin AST_W01_WVALID_STABLE $end
+$upscope $end
+
+$scope begin AST_W02_WDATA_STABLE $end
+$upscope $end
+
+$scope begin AST_W03_WSTRB_STABLE $end
+$upscope $end
+
+$scope begin AST_W04_WREADY_TIMEOUT $end
+$upscope $end
+
+$scope begin AST_W05_WDATA_NO_X $end
+$upscope $end
+
+$scope begin AST_W06_WSTRB_NONZERO $end
+$upscope $end
+
+$scope begin AST_B01_BVALID_AFTER_WRITE $end
+$upscope $end
+
+$scope begin AST_B02_BVALID_STABLE $end
+$upscope $end
+
+$scope begin AST_B03_BRESP_STABLE $end
+$upscope $end
+
+$scope begin AST_B04_BREADY_TIMEOUT $end
+$upscope $end
+
+$scope begin AST_AR01_ARVALID_STABLE $end
+$upscope $end
+
+$scope begin AST_AR02_ARADDR_STABLE $end
+$upscope $end
+
+$scope begin AST_AR03_ARREADY_TIMEOUT $end
+$upscope $end
+
+$scope begin AST_AR04_ARADDR_ALIGNED $end
+$upscope $end
+
+$scope begin AST_AR05_ARADDR_NO_X $end
+$upscope $end
+
+$scope begin AST_R01_RVALID_AFTER_READ $end
+$upscope $end
+
+$scope begin AST_R02_RVALID_STABLE $end
+$upscope $end
+
+$scope begin AST_R03_RDATA_STABLE $end
+$upscope $end
+
+$scope begin AST_R04_RREADY_TIMEOUT $end
+$upscope $end
+
+$scope begin AST_R05_RDATA_NO_X $end
+$upscope $end
+
+$scope begin AST_RST01 $end
+$upscope $end
+
+$scope begin AST_RST02 $end
+$upscope $end
+
+$scope begin AST_RST03 $end
+$upscope $end
+
+$scope begin AST_RST04 $end
+$upscope $end
+
+$scope begin AST_RST05 $end
+$upscope $end
+
+$scope begin COV_AW_HANDSHAKE $end
+$upscope $end
+
+$scope begin COV_W_HANDSHAKE $end
+$upscope $end
+
+$scope begin COV_B_HANDSHAKE $end
+$upscope $end
+
+$scope begin COV_AR_HANDSHAKE $end
+$upscope $end
+
+$scope begin COV_R_HANDSHAKE $end
+$upscope $end
+
+$scope begin COV_AW_WAIT $end
+$upscope $end
+
+$scope begin COV_W_WAIT $end
+$upscope $end
+
+$scope begin COV_AR_WAIT $end
+$upscope $end
+
+$scope begin COV_R_WAIT $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+$end

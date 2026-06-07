@@ -1,0 +1,13 @@
+# =============================================================================
+# File        : cov.ccf
+# Description : Cadence Xcelium Coverage Configuration
+# =============================================================================
+set_coverage -module tb_top -all
+set_coverage -type functional
+set_coverage -type toggle
+set_coverage -type branch
+set_coverage -type statement
+set_coverage -type expression
+set_coverage -type assertion
+exclude_coverage -toggle -regexp {.*rst.*}
+exclude_coverage -toggle -regexp {.*uvm.*}

@@ -1,0 +1,257 @@
+# vsim -c -coverage -suppress 3009 -t 1ps -do "coverage save -onexit coverage_db/tc016_data_patterns_test.ucdb; run -all; quit" tb_top "+UVM_TESTNAME=tc016_data_patterns_test" -l logs\tc016_data_patterns_test.log 
+# Start time: 09:06:26 on Jun 07,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.axi4lite_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.axi4lite_pkg(fast)
+# Loading work.tb_top_sv_unit(fast)
+# Loading work.tb_top(fast)
+# Loading work.axi4lite_slave_bfm(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# ** Warning: (vsim-8637) A modport ('monitor_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /axi4lite_pkg File: ../tb/monitor/axi4lite_monitor.sv Line: 51
+# ** Warning: (vsim-8637) A modport ('master_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /axi4lite_pkg::axi4lite_driver File: ../tb/driver/axi4lite_driver.sv Line: 39
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+# coverage save -onexit coverage_db/tc016_data_patterns_test.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test tc016_data_patterns_test...
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(63) @ 0: uvm_test_top [tc016_data_patterns_test] Build complete: num_transactions=20 seed=0
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------------
+# Name                       Type                      Size  Value
+# ----------------------------------------------------------------
+# uvm_test_top               tc016_data_patterns_test  -     @472 
+#   env                      axi4lite_env              -     @486 
+#     agent                  axi4lite_agent            -     @496 
+#       ap                   uvm_analysis_port         -     @526 
+#       drv                  axi4lite_driver           -     @653 
+#         rsp_port           uvm_analysis_port         -     @668 
+#         seq_item_port      uvm_seq_item_pull_port    -     @660 
+#       mon                  axi4lite_monitor          -     @535 
+#         ap                 uvm_analysis_port         -     @678 
+#       seqr                 axi4lite_sequencer        -     @544 
+#         rsp_export         uvm_analysis_export       -     @551 
+#         seq_item_export    uvm_seq_item_pull_imp     -     @645 
+#         arbitration_queue  array                     0     -    
+#         lock_queue         array                     0     -    
+#         num_last_reqs      integral                  32    'd1  
+#         num_last_rsps      integral                  32    'd1  
+#     coverage               axi4lite_coverage         -     @510 
+#       analysis_imp         uvm_analysis_imp          -     @517 
+#     scoreboard             axi4lite_scoreboard       -     @503 
+#       analysis_export      uvm_analysis_imp          -     @692 
+# ----------------------------------------------------------------
+# 
+# UVM_INFO ../tb/agent/axi4lite_agent.sv(69) @ 0: uvm_test_top.env.agent [axi4lite_agent] Agent mode: UVM_ACTIVE
+# UVM_INFO ../tb/env/axi4lite_env.sv(64) @ 0: uvm_test_top.env [axi4lite_env] Environment topology:
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------------
+# Name                       Type                      Size  Value
+# ----------------------------------------------------------------
+# uvm_test_top               tc016_data_patterns_test  -     @472 
+#   env                      axi4lite_env              -     @486 
+#     agent                  axi4lite_agent            -     @496 
+#       ap                   uvm_analysis_port         -     @526 
+#       drv                  axi4lite_driver           -     @653 
+#         rsp_port           uvm_analysis_port         -     @668 
+#         seq_item_port      uvm_seq_item_pull_port    -     @660 
+#       mon                  axi4lite_monitor          -     @535 
+#         ap                 uvm_analysis_port         -     @678 
+#       seqr                 axi4lite_sequencer        -     @544 
+#         rsp_export         uvm_analysis_export       -     @551 
+#         seq_item_export    uvm_seq_item_pull_imp     -     @645 
+#         arbitration_queue  array                     0     -    
+#         lock_queue         array                     0     -    
+#         num_last_reqs      integral                  32    'd1  
+#         num_last_rsps      integral                  32    'd1  
+#     coverage               axi4lite_coverage         -     @510 
+#       analysis_imp         uvm_analysis_imp          -     @517 
+#     scoreboard             axi4lite_scoreboard       -     @503 
+#       analysis_export      uvm_analysis_imp          -     @692 
+# ----------------------------------------------------------------
+# 
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(90) @ 0: uvm_test_top [tc016_data_patterns_test] Waiting for reset deassertion...
+# UVM_INFO ../tb/tb_top.sv(99) @ 95000: reporter [TB_TOP] Reset deasserted
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(95) @ 125000: uvm_test_top [tc016_data_patterns_test] Reset deasserted. Starting test.
+# UVM_INFO ../tb/test/axi4lite_tests.sv(350) @ 125000: uvm_test_top [tc016_data_patterns_test] === TC016: Data Patterns Test ===
+# UVM_INFO ../tb/sequence/axi4lite_sequences.sv(287) @ 125000: uvm_test_top.env.agent.seqr@@seq [tc016_data_patterns_seq] TC016: Data Patterns Test
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 185000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000500 DATA=0x00000000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 235000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000500 RDATA=0x00000000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 295000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000504 DATA=0xffffffff WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 335000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000504 RDATA=0xffffffff RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 385000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00000001 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 425000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00000001 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 475000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00000002 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 515000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00000002 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 575000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00000004 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 625000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00000004 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 675000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00000008 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 715000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00000008 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 765000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00000010 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 805000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00000010 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 855000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00000020 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 895000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00000020 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 955000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00000040 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 995000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00000040 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 1045000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00000080 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 1095000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00000080 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 1145000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00000100 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 1185000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00000100 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 1245000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00000200 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 1285000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00000200 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 1345000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00000400 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 1385000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00000400 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 1435000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00000800 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 1475000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00000800 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 1535000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00001000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 1575000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00001000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 1635000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00002000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 1685000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00002000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 1745000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00004000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 1785000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00004000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 1845000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00008000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 1885000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00008000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 1935000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00010000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 1975000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00010000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 2035000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00020000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 2075000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00020000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 2125000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00040000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 2175000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00040000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 2235000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00080000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 2275000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00080000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 2335000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00100000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 2385000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00100000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 2435000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00200000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 2485000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00200000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 2535000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00400000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 2585000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00400000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 2645000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x00800000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 2685000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x00800000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 2735000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x01000000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 2785000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x01000000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 2835000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x02000000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 2885000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x02000000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 2935000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x04000000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 2985000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x04000000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 3045000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x08000000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 3085000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x08000000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 3135000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x10000000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 3175000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x10000000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 3225000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x20000000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 3265000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x20000000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 3325000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x40000000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 3365000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x40000000 RRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 3425000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000508 DATA=0x80000000 WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 3475000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000508 RDATA=0x80000000 RRESP=AXI_OKAY
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 3475000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(240) @ 3475000: uvm_test_top.env.agent.drv [axi4lite_driver] Driver: writes=34 reads=34 timeouts=0
+# UVM_INFO ../tb/monitor/axi4lite_monitor.sv(168) @ 3475000: uvm_test_top.env.agent.mon [axi4lite_monitor] Monitor: writes_observed=34 reads_observed=34
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(192) @ 3475000: uvm_test_top.env.coverage [axi4lite_coverage] 
+# 
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(193) @ 3475000: uvm_test_top.env.coverage [axi4lite_coverage] ==================================================
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(194) @ 3475000: uvm_test_top.env.coverage [axi4lite_coverage]          FUNCTIONAL COVERAGE REPORT               
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(195) @ 3475000: uvm_test_top.env.coverage [axi4lite_coverage] ==================================================
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(196) @ 3475000: uvm_test_top.env.coverage [axi4lite_coverage]   Read/Write Ops      : 100.00%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(197) @ 3475000: uvm_test_top.env.coverage [axi4lite_coverage]   Address Range       :  33.33%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(198) @ 3475000: uvm_test_top.env.coverage [axi4lite_coverage]   WSTRB Values        :   6.67%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(199) @ 3475000: uvm_test_top.env.coverage [axi4lite_coverage]   Data Patterns       : 100.00%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(200) @ 3475000: uvm_test_top.env.coverage [axi4lite_coverage]   Response Codes      :  50.00%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(201) @ 3475000: uvm_test_top.env.coverage [axi4lite_coverage]   Cross: Addr x Op    :  55.56%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(202) @ 3475000: uvm_test_top.env.coverage [axi4lite_coverage]   Cross: Addr x WSTRB :  33.33%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(203) @ 3475000: uvm_test_top.env.coverage [axi4lite_coverage]   Transfer Size       :  25.00%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(204) @ 3475000: uvm_test_top.env.coverage [axi4lite_coverage] ==================================================
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(205) @ 3475000: uvm_test_top.env.coverage [axi4lite_coverage]   OVERALL             :  50.49%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(206) @ 3475000: uvm_test_top.env.coverage [axi4lite_coverage] ==================================================
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(148) @ 3475000: uvm_test_top.env.scoreboard [axi4lite_scoreboard] 
+# 
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(149) @ 3475000: uvm_test_top.env.scoreboard [axi4lite_scoreboard] ==================================================
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(150) @ 3475000: uvm_test_top.env.scoreboard [axi4lite_scoreboard]            SCOREBOARD SUMMARY                     
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(151) @ 3475000: uvm_test_top.env.scoreboard [axi4lite_scoreboard] ==================================================
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(152) @ 3475000: uvm_test_top.env.scoreboard [axi4lite_scoreboard]   Writes  Checked : 34                           
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(153) @ 3475000: uvm_test_top.env.scoreboard [axi4lite_scoreboard]   Reads   Checked : 34                           
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(154) @ 3475000: uvm_test_top.env.scoreboard [axi4lite_scoreboard]   PASS            : 68      (100.0%)             
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(155) @ 3475000: uvm_test_top.env.scoreboard [axi4lite_scoreboard]   FAIL            : 0                            
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(156) @ 3475000: uvm_test_top.env.scoreboard [axi4lite_scoreboard] ==================================================
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(159) @ 3475000: uvm_test_top.env.scoreboard [axi4lite_scoreboard]   STATUS : ** SIMULATION PASSED **                
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(163) @ 3475000: uvm_test_top.env.scoreboard [axi4lite_scoreboard] ==================================================
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(113) @ 3475000: uvm_test_top [tc016_data_patterns_test] 
+# 
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(114) @ 3475000: uvm_test_top [tc016_data_patterns_test] ==================================================
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(115) @ 3475000: uvm_test_top [tc016_data_patterns_test]              UVM TEST REPORT SUMMARY              
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(116) @ 3475000: uvm_test_top [tc016_data_patterns_test] ==================================================
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(117) @ 3475000: uvm_test_top [tc016_data_patterns_test]   UVM Errors  : 0                                
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(118) @ 3475000: uvm_test_top [tc016_data_patterns_test]   UVM Fatals  : 0                                
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(119) @ 3475000: uvm_test_top [tc016_data_patterns_test] ==================================================
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(121) @ 3475000: uvm_test_top [tc016_data_patterns_test]   _____        _____ _____  
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(122) @ 3475000: uvm_test_top [tc016_data_patterns_test]  |  __ \ /\   / ____/ ____| 
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(123) @ 3475000: uvm_test_top [tc016_data_patterns_test]  | |__) /  \ | (___| (___   
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(124) @ 3475000: uvm_test_top [tc016_data_patterns_test]  |  ___/ /\ \ \___ \\___ \  
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(125) @ 3475000: uvm_test_top [tc016_data_patterns_test]  | |  / ____ \____) |___) | 
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(126) @ 3475000: uvm_test_top [tc016_data_patterns_test]  |_| /_/    \_\_____/_____/ 
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(127) @ 3475000: uvm_test_top [tc016_data_patterns_test]                             
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(128) @ 3475000: uvm_test_top [tc016_data_patterns_test] ==================================================
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  125
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TB_TOP]     1
+# [TEST_DONE]     1
+# [UVMTOP]     2
+# [axi4lite_agent]     1
+# [axi4lite_coverage]    15
+# [axi4lite_driver]    69
+# [axi4lite_env]     1
+# [axi4lite_monitor]     1
+# [axi4lite_scoreboard]    11
+# [tc016_data_patterns_seq]     1
+# [tc016_data_patterns_test]    19
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 3475 ns  Iteration: 62  Instance: /tb_top
+# Saving coverage database on exit...
+# End time: 09:06:29 on Jun 07,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 2

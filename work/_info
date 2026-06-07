@@ -1,0 +1,210 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Windows 10/Downloads/axi4lite_uvm_tb/axi4lite_uvm_tb/sim
+T_opt
+!s110 1780804867
+VbHGK`4?C]LJSA5?o;67:W2
+04 6 4 work tb_top fast 0
+=1-e86a64de7da5-6a24ed03-171-1860
+o-quiet -auto_acc_if_foreign -work work -suppress 3009
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.7c;67
+vaxi4lite_assertions
+Z2 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+Z3 !s110 1780804864
+!i10b 1
+!s100 H?4=VzgknA_LN0@F]z0D^0
+I<Qb`Z0T<5Cg^zILOn;aLZ2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s105 axi4lite_assertions_sv_unit
+S1
+R0
+Z5 w1780717746
+8../tb/axi4lite_assertions.sv
+F../tb/axi4lite_assertions.sv
+L0 9
+Z6 OL;L;10.7c;67
+r1
+!s85 0
+31
+Z7 !s108 1780804864.000000
+Z8 !s107 ../tb/test/axi4lite_tests.sv|../tb/test/axi4lite_base_test.sv|../tb/sequence/axi4lite_sequences.sv|../tb/sequence/axi4lite_base_seq.sv|../tb/env/axi4lite_env.sv|../tb/coverage/axi4lite_coverage.sv|../tb/scoreboard/axi4lite_scoreboard.sv|../tb/agent/axi4lite_agent.sv|../tb/monitor/axi4lite_monitor.sv|../tb/driver/axi4lite_driver.sv|../tb/sequencer/axi4lite_sequencer.sv|../tb/agent/axi4lite_config.sv|../tb/transaction/axi4lite_seq_item.sv|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|../tb/tb_top.sv|../tb/axi4lite_pkg.sv|../tb/axi4lite_assertions.sv|../rtl/axi4lite_slave_bfm.sv|../interface/axi4lite_if.sv|
+Z9 !s90 -sv|+incdir+../tb/transaction|+incdir+../tb/agent|+incdir+../tb/sequencer|+incdir+../tb/driver|+incdir+../tb/monitor|+incdir+../tb/scoreboard|+incdir+../tb/coverage|+incdir+../tb/env|+incdir+../tb/sequence|+incdir+../tb/test|../interface/axi4lite_if.sv|../rtl/axi4lite_slave_bfm.sv|../tb/axi4lite_assertions.sv|../tb/axi4lite_pkg.sv|../tb/tb_top.sv|
+!i113 0
+Z10 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 !s92 -sv +incdir+../tb/transaction +incdir+../tb/agent +incdir+../tb/sequencer +incdir+../tb/driver +incdir+../tb/monitor +incdir+../tb/scoreboard +incdir+../tb/coverage +incdir+../tb/env +incdir+../tb/sequence +incdir+../tb/test -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+Yaxi4lite_if
+R2
+R3
+!i10b 1
+!s100 1jI:?zohEl4O>IWllaMkK0
+Ic5]8h>?NZWUYO[7b<:]U91
+R4
+!s105 axi4lite_if_sv_unit
+S1
+R0
+w1780717745
+8../interface/axi4lite_if.sv
+F../interface/axi4lite_if.sv
+L0 5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+Xaxi4lite_pkg
+!s115 axi4lite_if
+R2
+Z12 DXx6 mtiUvm 7 uvm_pkg 0 22 3zPkj@YUcM=M^m3zCLh<H1
+!s110 1780804865
+!i10b 1
+!s100 QW]W^n[`P2YRZL0>1Xb3`3
+IKko5Y?l>z[bEJQCKEVlzG2
+VKko5Y?l>z[bEJQCKEVlzG2
+S1
+R0
+w1780727430
+8../tb/axi4lite_pkg.sv
+F../tb/axi4lite_pkg.sv
+Z13 FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh
+Z14 FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh
+Z15 FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh
+Z16 FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh
+Z17 FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh
+Z18 FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh
+Z19 FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh
+Z20 FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh
+Z21 FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh
+Z22 FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh
+Z23 FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh
+Z24 FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh
+F../tb/transaction/axi4lite_seq_item.sv
+F../tb/agent/axi4lite_config.sv
+F../tb/sequencer/axi4lite_sequencer.sv
+F../tb/driver/axi4lite_driver.sv
+F../tb/monitor/axi4lite_monitor.sv
+F../tb/agent/axi4lite_agent.sv
+F../tb/scoreboard/axi4lite_scoreboard.sv
+F../tb/coverage/axi4lite_coverage.sv
+F../tb/env/axi4lite_env.sv
+F../tb/sequence/axi4lite_base_seq.sv
+F../tb/sequence/axi4lite_sequences.sv
+F../tb/test/axi4lite_base_test.sv
+F../tb/test/axi4lite_tests.sv
+L0 8
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+vaxi4lite_slave_bfm
+R2
+R3
+!i10b 1
+!s100 ]Dio<@5KhEhYH@MEVYQgm1
+Ii[7EoEQU3^2K]1URRMZDi0
+R4
+!s105 axi4lite_slave_bfm_sv_unit
+S1
+R0
+w1780726244
+8../rtl/axi4lite_slave_bfm.sv
+F../rtl/axi4lite_slave_bfm.sv
+L0 6
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+vtb_top
+R2
+R12
+Z25 DXx4 work 12 axi4lite_pkg 0 22 Kko5Y?l>z[bEJQCKEVlzG2
+DXx4 work 14 tb_top_sv_unit 0 22 iXJPAT;NOTO:KNcB<>OnO2
+R4
+r1
+!s85 0
+!i10b 1
+!s100 @B7F7DZ?7zE6J02oeN]Ei2
+I3AzPibBG:cfm?83UJ]U;h2
+!s105 tb_top_sv_unit
+S1
+R0
+R5
+Z26 8../tb/tb_top.sv
+Z27 F../tb/tb_top.sv
+L0 18
+R6
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+Xtb_top_sv_unit
+R2
+R12
+R25
+ViXJPAT;NOTO:KNcB<>OnO2
+r1
+!s85 0
+!i10b 1
+!s100 3ihcSoQ]QkDP@ZZTBFKjY3
+IiXJPAT;NOTO:KNcB<>OnO2
+!i103 1
+S1
+R0
+R5
+R26
+R27
+R13
+R14
+R15
+R16
+R17
+R18
+R19
+R20
+R21
+R22
+R23
+R24
+L0 12
+R6
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
