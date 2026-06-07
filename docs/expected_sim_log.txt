@@ -1,0 +1,158 @@
+================================================================================
+  EXPECTED SIMULATION LOG - tc008_rand_mix_test (20 transactions)
+  Cadence Xcelium | AXI4-Lite UVM Verification Environment | UVM-1.2
+================================================================================
+
+xrun(64): 24.09-s003: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+xrun(64): TOOL:   xrun(64)    24.09-s003
+xrun(64): DEPENDS: UVM        1.2
+
+UVM_INFO @ 0: reporter [RNTST] Running test tc008_rand_mix_test...
+
+--------------------------------------------------------------------------------
+ UVM-1.2
+ (C) 2007-2014 Mentor Graphics Corporation,
+               Cadence Design Systems, Inc.,
+               Synopsys, Inc., and Aldec, Inc.
+--------------------------------------------------------------------------------
+
+UVM_INFO tb_top.sv(XX) @ 0: uvm_test_top [TB_TOP] Reset deasserted
+
+UVM_INFO axi4lite_base_test.sv(XX) @ 10ns: uvm_test_top [axi4lite_base_test]
+    Build complete: num_transactions=20 seed=12345
+
+--------------------------------------------------------------------
+Name                           Type                     Size  Value
+--------------------------------------------------------------------
+uvm_test_top                   tc008_rand_mix_test      -     @336
+  env                          axi4lite_env             -     @337
+    agent                      axi4lite_agent           -     @338
+      seqr                     axi4lite_sequencer       -     @339
+      drv                      axi4lite_driver          -     @340
+      mon                      axi4lite_monitor         -     @341
+    scoreboard                 axi4lite_scoreboard      -     @342
+    coverage                   axi4lite_coverage        -     @343
+--------------------------------------------------------------------
+
+UVM_INFO axi4lite_base_test.sv(XX) @ 100ns: uvm_test_top [axi4lite_base_test]
+    Reset deasserted. Starting test.
+
+UVM_INFO axi4lite_tests.sv(XX) @ 100ns: uvm_test_top [tc008_rand_mix_test]
+    === TC008: Random Read/Write Mix ===
+
+UVM_INFO axi4lite_sequences.sv(XX) @ 100ns: uvm_test_top.env.agent.seqr@@seq [tc008_rand_mix_seq]
+    TC008: 20 Random R/W Mix
+
+UVM_INFO axi4lite_driver.sv(XX) @ 120ns: uvm_test_top.env.agent.drv [axi4lite_driver]
+    [WRITE] ADDR=0x00000400 DATA=0xA3C1B29D WSTRB=4'b1111 BRESP=OKAY
+
+UVM_INFO axi4lite_monitor.sv(XX) @ 130ns: uvm_test_top.env.agent.mon [axi4lite_monitor]
+    [MON_WR] [WRITE] ADDR=0x00000400 DATA=0xA3C1B29D RDATA=0x00000000 WSTRB=4'b1111 BRESP=OKAY RRESP=OKAY
+
+UVM_INFO axi4lite_scoreboard.sv(XX) @ 130ns: uvm_test_top.env.scoreboard [SCB_WRITE]
+    [PASS] WRITE ADDR=0x00000400 DATA=0xA3C1B29D WSTRB=4'b1111 -> MEM=0xA3C1B29D
+
+UVM_INFO axi4lite_driver.sv(XX) @ 160ns: uvm_test_top.env.agent.drv [axi4lite_driver]
+    [READ ] ADDR=0x000000C0 RDATA=0x00000000 RRESP=OKAY
+
+UVM_INFO axi4lite_monitor.sv(XX) @ 170ns: uvm_test_top.env.agent.mon [axi4lite_monitor]
+    [MON_RD] [READ ] ADDR=0x000000C0 DATA=0x00000000 RDATA=0x00000000 WSTRB=4'b1111 BRESP=OKAY RRESP=OKAY
+
+UVM_INFO axi4lite_scoreboard.sv(XX) @ 170ns: uvm_test_top.env.scoreboard [SCB_READ]
+    [PASS] READ  ADDR=0x000000C0 RDATA=0x00000000
+
+UVM_INFO axi4lite_driver.sv(XX) @ 200ns: uvm_test_top.env.agent.drv [axi4lite_driver]
+    [WRITE] ADDR=0x00000800 DATA=0xFFFFFFFF WSTRB=4'b0011 BRESP=OKAY
+
+UVM_INFO axi4lite_scoreboard.sv(XX) @ 210ns: uvm_test_top.env.scoreboard [SCB_WRITE]
+    [PASS] WRITE ADDR=0x00000800 DATA=0xFFFFFFFF WSTRB=4'b0011 -> MEM=0x0000FFFF
+
+... (transactions 4-19 continue similarly) ...
+
+UVM_INFO axi4lite_driver.sv(XX) @ 980ns: uvm_test_top.env.agent.drv [axi4lite_driver]
+    [READ ] ADDR=0x00000400 RDATA=0x12345678 RRESP=OKAY
+
+UVM_INFO axi4lite_scoreboard.sv(XX) @ 990ns: uvm_test_top.env.scoreboard [SCB_READ]
+    [PASS] READ  ADDR=0x00000400 RDATA=0x12345678
+
+UVM_INFO axi4lite_driver.sv(XX) @ 990ns: uvm_test_top.env.agent.drv [axi4lite_driver]
+    Driver: writes=11 reads=9 timeouts=0
+
+UVM_INFO axi4lite_monitor.sv(XX) @ 990ns: uvm_test_top.env.agent.mon [axi4lite_monitor]
+    Monitor: writes_observed=11 reads_observed=9
+
+UVM_INFO axi4lite_scoreboard.sv(XX) @ 990ns: uvm_test_top.env.scoreboard [axi4lite_scoreboard]
+
+UVM_INFO axi4lite_scoreboard.sv(XX) @ 990ns: uvm_test_top.env.scoreboard [axi4lite_scoreboard]
+    ╔══════════════════════════════════════════════════╗
+UVM_INFO axi4lite_scoreboard.sv(XX) @ 990ns: uvm_test_top.env.scoreboard [axi4lite_scoreboard]
+    ║           SCOREBOARD SUMMARY                     ║
+UVM_INFO axi4lite_scoreboard.sv(XX) @ 990ns: uvm_test_top.env.scoreboard [axi4lite_scoreboard]
+    ╠══════════════════════════════════════════════════╣
+UVM_INFO axi4lite_scoreboard.sv(XX) @ 990ns: uvm_test_top.env.scoreboard [axi4lite_scoreboard]
+    ║  Writes  Checked : 11                            ║
+UVM_INFO axi4lite_scoreboard.sv(XX) @ 990ns: uvm_test_top.env.scoreboard [axi4lite_scoreboard]
+    ║  Reads   Checked : 9                             ║
+UVM_INFO axi4lite_scoreboard.sv(XX) @ 990ns: uvm_test_top.env.scoreboard [axi4lite_scoreboard]
+    ║  PASS            : 20      (100.0%)              ║
+UVM_INFO axi4lite_scoreboard.sv(XX) @ 990ns: uvm_test_top.env.scoreboard [axi4lite_scoreboard]
+    ║  FAIL            : 0                             ║
+UVM_INFO axi4lite_scoreboard.sv(XX) @ 990ns: uvm_test_top.env.scoreboard [axi4lite_scoreboard]
+    ╠══════════════════════════════════════════════════╣
+UVM_INFO axi4lite_scoreboard.sv(XX) @ 990ns: uvm_test_top.env.scoreboard [axi4lite_scoreboard]
+    ║  STATUS : ** SIMULATION PASSED **                ║
+UVM_INFO axi4lite_scoreboard.sv(XX) @ 990ns: uvm_test_top.env.scoreboard [axi4lite_scoreboard]
+    ╚══════════════════════════════════════════════════╝
+
+UVM_INFO axi4lite_coverage.sv(XX) @ 990ns: uvm_test_top.env.coverage [axi4lite_coverage]
+    ╔══════════════════════════════════════════════════╗
+    ║         FUNCTIONAL COVERAGE REPORT               ║
+    ╠══════════════════════════════════════════════════╣
+    ║  Read/Write Ops      : 100.00%                   ║
+    ║  Address Range       :  83.33%                   ║
+    ║  WSTRB Values        :  60.00%                   ║
+    ║  Data Patterns       :  75.00%                   ║
+    ║  Response Codes      :  25.00%                   ║
+    ║  Cross: Addr x Op    :  66.67%                   ║
+    ║  Cross: Addr x WSTRB :  50.00%                   ║
+    ║  Transfer Size       :  75.00%                   ║
+    ╠══════════════════════════════════════════════════╣
+    ║  OVERALL             :  66.88%                   ║
+    ╚══════════════════════════════════════════════════╝
+
+UVM_INFO axi4lite_base_test.sv(XX) @ 990ns: uvm_test_top [axi4lite_base_test]
+    ╔══════════════════════════════════════════════════╗
+    ║             UVM TEST REPORT SUMMARY              ║
+    ╠══════════════════════════════════════════════════╣
+    ║  UVM Errors  : 0                                 ║
+    ║  UVM Fatals  : 0                                 ║
+    ╠══════════════════════════════════════════════════╣
+    ║  RESULT : ** TEST PASSED **                      ║
+    ╚══════════════════════════════════════════════════╝
+
+UVM_INFO @ 990ns: reporter [TEST_DONE]
+    'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   xxx
+UVM_WARNING :   0
+UVM_ERROR :     0
+UVM_FATAL :     0
+** Report counts by id
+[RNTST]           1
+[axi4lite_driver] XX
+[axi4lite_monitor] XX
+[SCB_WRITE]       11
+[SCB_READ]         9
+[tc008_rand_mix_test] 1
+[TEST_DONE]        1
+
+Simulation PASSED.
+
+xrun: *W,RNQUIE: Simulation is complete.
+================================================================================
+NOTE: Run make regress to achieve >=95% coverage across all 15 tests.
+      Use +UVM_VERBOSITY=UVM_HIGH to see per-item driver/monitor detail.
+================================================================================
