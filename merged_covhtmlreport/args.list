@@ -1,0 +1,5 @@
+-html
+coverage_db/merged_coverage.ucdb
+-htmldir
+merged_covhtmlreport
+-details

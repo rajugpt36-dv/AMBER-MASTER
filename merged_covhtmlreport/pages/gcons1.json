@@ -1,0 +1,19 @@
+var g_db_data = [
+{dummy:0},
+{name:'cg_operation',f:1,type:6,id:1263,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/axi4lite_pkg/axi4lite_coverage',parent:'1258'},
+{name:'cg_address_range',f:1,type:6,id:1265,tb:'3',h:'3',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/axi4lite_pkg/axi4lite_coverage',parent:'1258'},
+{name:'cg_wstrb',f:1,type:6,id:1267,tb:'15',h:'15',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/axi4lite_pkg/axi4lite_coverage',parent:'1258'},
+{name:'cg_data_pattern',f:1,type:6,id:1269,tb:'3',h:'3',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/axi4lite_pkg/axi4lite_coverage',parent:'1258'},
+{name:'cg_response',f:1,type:6,id:1271,tb:'4',h:'4',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/axi4lite_pkg/axi4lite_coverage',parent:'1258'},
+{name:'cg_cross_addr_op',f:1,type:6,id:1274,tb:'11',h:'11',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/axi4lite_pkg/axi4lite_coverage',parent:'1258'},
+{name:'cg_cross_addr_wstrb',f:1,type:6,id:1278,tb:'11',h:'11',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/axi4lite_pkg/axi4lite_coverage',parent:'1258'},
+{name:'cg_transfer_size',f:1,type:6,id:1282,tb:'4',h:'4',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/axi4lite_pkg/axi4lite_coverage',parent:'1258'},
+{name:'cg_operation',f:1,type:6,id:2268,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','true']],hdlPath:'work.axi4lite_pkg::axi4lite_coverage',parent:'2263'},
+{name:'cg_address_range',f:1,type:6,id:2270,tb:'3',h:'3',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','true']],hdlPath:'work.axi4lite_pkg::axi4lite_coverage',parent:'2263'},
+{name:'cg_wstrb',f:1,type:6,id:2272,tb:'15',h:'15',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','true']],hdlPath:'work.axi4lite_pkg::axi4lite_coverage',parent:'2263'},
+{name:'cg_data_pattern',f:1,type:6,id:2274,tb:'3',h:'3',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','true']],hdlPath:'work.axi4lite_pkg::axi4lite_coverage',parent:'2263'},
+{name:'cg_response',f:1,type:6,id:2276,tb:'4',h:'4',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','true']],hdlPath:'work.axi4lite_pkg::axi4lite_coverage',parent:'2263'},
+{name:'cg_cross_addr_op',f:1,type:6,id:2279,tb:'11',h:'11',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','true']],hdlPath:'work.axi4lite_pkg::axi4lite_coverage',parent:'2263'},
+{name:'cg_cross_addr_wstrb',f:1,type:6,id:2283,tb:'11',h:'11',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','true']],hdlPath:'work.axi4lite_pkg::axi4lite_coverage',parent:'2263'},
+{name:'cg_transfer_size',f:1,type:6,id:2287,tb:'4',h:'4',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','true']],hdlPath:'work.axi4lite_pkg::axi4lite_coverage',parent:'2263'}];
+processConsCovergroupsData(g_db_data);

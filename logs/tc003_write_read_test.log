@@ -1,0 +1,191 @@
+# vsim -c -coverage -suppress 3009 -t 1ps -do "coverage save -onexit coverage_db/tc003_write_read_test.ucdb; run -all; quit" tb_top "+UVM_TESTNAME=tc003_write_read_test" -l logs\tc003_write_read_test.log 
+# Start time: 09:05:13 on Jun 07,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.axi4lite_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.axi4lite_pkg(fast)
+# Loading work.tb_top_sv_unit(fast)
+# Loading work.tb_top(fast)
+# Loading work.axi4lite_slave_bfm(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# ** Warning: (vsim-8637) A modport ('monitor_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /axi4lite_pkg File: ../tb/monitor/axi4lite_monitor.sv Line: 51
+# ** Warning: (vsim-8637) A modport ('master_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /axi4lite_pkg::axi4lite_driver File: ../tb/driver/axi4lite_driver.sv Line: 39
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+# coverage save -onexit coverage_db/tc003_write_read_test.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test tc003_write_read_test...
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(63) @ 0: uvm_test_top [tc003_write_read_test] Build complete: num_transactions=20 seed=0
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               tc003_write_read_test   -     @472 
+#   env                      axi4lite_env            -     @486 
+#     agent                  axi4lite_agent          -     @496 
+#       ap                   uvm_analysis_port       -     @526 
+#       drv                  axi4lite_driver         -     @653 
+#         rsp_port           uvm_analysis_port       -     @668 
+#         seq_item_port      uvm_seq_item_pull_port  -     @660 
+#       mon                  axi4lite_monitor        -     @535 
+#         ap                 uvm_analysis_port       -     @678 
+#       seqr                 axi4lite_sequencer      -     @544 
+#         rsp_export         uvm_analysis_export     -     @551 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @645 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     coverage               axi4lite_coverage       -     @510 
+#       analysis_imp         uvm_analysis_imp        -     @517 
+#     scoreboard             axi4lite_scoreboard     -     @503 
+#       analysis_export      uvm_analysis_imp        -     @692 
+# --------------------------------------------------------------
+# 
+# UVM_INFO ../tb/agent/axi4lite_agent.sv(69) @ 0: uvm_test_top.env.agent [axi4lite_agent] Agent mode: UVM_ACTIVE
+# UVM_INFO ../tb/env/axi4lite_env.sv(64) @ 0: uvm_test_top.env [axi4lite_env] Environment topology:
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               tc003_write_read_test   -     @472 
+#   env                      axi4lite_env            -     @486 
+#     agent                  axi4lite_agent          -     @496 
+#       ap                   uvm_analysis_port       -     @526 
+#       drv                  axi4lite_driver         -     @653 
+#         rsp_port           uvm_analysis_port       -     @668 
+#         seq_item_port      uvm_seq_item_pull_port  -     @660 
+#       mon                  axi4lite_monitor        -     @535 
+#         ap                 uvm_analysis_port       -     @678 
+#       seqr                 axi4lite_sequencer      -     @544 
+#         rsp_export         uvm_analysis_export     -     @551 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @645 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     coverage               axi4lite_coverage       -     @510 
+#       analysis_imp         uvm_analysis_imp        -     @517 
+#     scoreboard             axi4lite_scoreboard     -     @503 
+#       analysis_export      uvm_analysis_imp        -     @692 
+# --------------------------------------------------------------
+# 
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(90) @ 0: uvm_test_top [tc003_write_read_test] Waiting for reset deassertion...
+# UVM_INFO ../tb/tb_top.sv(99) @ 95000: reporter [TB_TOP] Reset deasserted
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(95) @ 125000: uvm_test_top [tc003_write_read_test] Reset deasserted. Starting test.
+# UVM_INFO ../tb/test/axi4lite_tests.sv(55) @ 125000: uvm_test_top [tc003_write_read_test] === TC003: Write-Read Same Address ===
+# UVM_INFO ../tb/sequence/axi4lite_sequences.sv(51) @ 125000: uvm_test_top.env.agent.seqr@@seq [tc003_write_read_seq] TC003: Write then Read same address
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(162) @ 185000: uvm_test_top.env.agent.drv [axi4lite_driver] [WRITE] ADDR=0x00000200 DATA=0xdeadbeef WSTRB=4'b1111 BRESP=AXI_OKAY
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(218) @ 235000: uvm_test_top.env.agent.drv [axi4lite_driver] [READ ] ADDR=0x00000200 RDATA=0xdeadbeef RRESP=AXI_OKAY
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 235000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../tb/driver/axi4lite_driver.sv(240) @ 235000: uvm_test_top.env.agent.drv [axi4lite_driver] Driver: writes=1 reads=1 timeouts=0
+# UVM_INFO ../tb/monitor/axi4lite_monitor.sv(168) @ 235000: uvm_test_top.env.agent.mon [axi4lite_monitor] Monitor: writes_observed=1 reads_observed=1
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(192) @ 235000: uvm_test_top.env.coverage [axi4lite_coverage] 
+# 
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(193) @ 235000: uvm_test_top.env.coverage [axi4lite_coverage] ==================================================
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(194) @ 235000: uvm_test_top.env.coverage [axi4lite_coverage]          FUNCTIONAL COVERAGE REPORT               
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(195) @ 235000: uvm_test_top.env.coverage [axi4lite_coverage] ==================================================
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(196) @ 235000: uvm_test_top.env.coverage [axi4lite_coverage]   Read/Write Ops      : 100.00%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(197) @ 235000: uvm_test_top.env.coverage [axi4lite_coverage]   Address Range       :  33.33%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(198) @ 235000: uvm_test_top.env.coverage [axi4lite_coverage]   WSTRB Values        :   6.67%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(199) @ 235000: uvm_test_top.env.coverage [axi4lite_coverage]   Data Patterns       :  33.33%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(200) @ 235000: uvm_test_top.env.coverage [axi4lite_coverage]   Response Codes      :  50.00%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(201) @ 235000: uvm_test_top.env.coverage [axi4lite_coverage]   Cross: Addr x Op    :  55.56%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(202) @ 235000: uvm_test_top.env.coverage [axi4lite_coverage]   Cross: Addr x WSTRB :  33.33%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(203) @ 235000: uvm_test_top.env.coverage [axi4lite_coverage]   Transfer Size       :  25.00%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(204) @ 235000: uvm_test_top.env.coverage [axi4lite_coverage] ==================================================
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(205) @ 235000: uvm_test_top.env.coverage [axi4lite_coverage]   OVERALL             :  42.15%                  
+# UVM_INFO ../tb/coverage/axi4lite_coverage.sv(206) @ 235000: uvm_test_top.env.coverage [axi4lite_coverage] ==================================================
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(148) @ 235000: uvm_test_top.env.scoreboard [axi4lite_scoreboard] 
+# 
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(149) @ 235000: uvm_test_top.env.scoreboard [axi4lite_scoreboard] ==================================================
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(150) @ 235000: uvm_test_top.env.scoreboard [axi4lite_scoreboard]            SCOREBOARD SUMMARY                     
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(151) @ 235000: uvm_test_top.env.scoreboard [axi4lite_scoreboard] ==================================================
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(152) @ 235000: uvm_test_top.env.scoreboard [axi4lite_scoreboard]   Writes  Checked : 1                            
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(153) @ 235000: uvm_test_top.env.scoreboard [axi4lite_scoreboard]   Reads   Checked : 1                            
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(154) @ 235000: uvm_test_top.env.scoreboard [axi4lite_scoreboard]   PASS            : 2       (100.0%)             
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(155) @ 235000: uvm_test_top.env.scoreboard [axi4lite_scoreboard]   FAIL            : 0                            
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(156) @ 235000: uvm_test_top.env.scoreboard [axi4lite_scoreboard] ==================================================
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(159) @ 235000: uvm_test_top.env.scoreboard [axi4lite_scoreboard]   STATUS : ** SIMULATION PASSED **                
+# UVM_INFO ../tb/scoreboard/axi4lite_scoreboard.sv(163) @ 235000: uvm_test_top.env.scoreboard [axi4lite_scoreboard] ==================================================
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(113) @ 235000: uvm_test_top [tc003_write_read_test] 
+# 
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(114) @ 235000: uvm_test_top [tc003_write_read_test] ==================================================
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(115) @ 235000: uvm_test_top [tc003_write_read_test]              UVM TEST REPORT SUMMARY              
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(116) @ 235000: uvm_test_top [tc003_write_read_test] ==================================================
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(117) @ 235000: uvm_test_top [tc003_write_read_test]   UVM Errors  : 0                                
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(118) @ 235000: uvm_test_top [tc003_write_read_test]   UVM Fatals  : 0                                
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(119) @ 235000: uvm_test_top [tc003_write_read_test] ==================================================
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(121) @ 235000: uvm_test_top [tc003_write_read_test]   _____        _____ _____  
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(122) @ 235000: uvm_test_top [tc003_write_read_test]  |  __ \ /\   / ____/ ____| 
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(123) @ 235000: uvm_test_top [tc003_write_read_test]  | |__) /  \ | (___| (___   
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(124) @ 235000: uvm_test_top [tc003_write_read_test]  |  ___/ /\ \ \___ \\___ \  
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(125) @ 235000: uvm_test_top [tc003_write_read_test]  | |  / ____ \____) |___) | 
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(126) @ 235000: uvm_test_top [tc003_write_read_test]  |_| /_/    \_\_____/_____/ 
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(127) @ 235000: uvm_test_top [tc003_write_read_test]                             
+# UVM_INFO ../tb/test/axi4lite_base_test.sv(128) @ 235000: uvm_test_top [tc003_write_read_test] ==================================================
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   59
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TB_TOP]     1
+# [TEST_DONE]     1
+# [UVMTOP]     2
+# [axi4lite_agent]     1
+# [axi4lite_coverage]    15
+# [axi4lite_driver]     3
+# [axi4lite_env]     1
+# [axi4lite_monitor]     1
+# [axi4lite_scoreboard]    11
+# [tc003_write_read_seq]     1
+# [tc003_write_read_test]    19
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 235 ns  Iteration: 62  Instance: /tb_top
+# Saving coverage database on exit...
+# End time: 09:05:17 on Jun 07,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 2
